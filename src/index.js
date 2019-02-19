@@ -26,8 +26,8 @@ export default class App extends Component {
 
 	loadImages = () => {
 		fetch(
-			`https://api.unsplash.com/photos/?client_id=3fd6bdbde3a7b6e283d60e620289652444d9f6946c5ea62a64085bacb193529c&page=${this
-				.state.page}&per_page=${this.state.perPage}`
+			`https://api.unsplash.com/photos/?client_id=CLIENT_ID&page=${this.state.page}&per_page=${this.state
+				.perPage}`
 		)
 			.then((res) => res.json())
 			.then((data) =>
